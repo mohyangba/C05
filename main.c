@@ -2,21 +2,19 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[])
-{ 
-    int num;
-    
-    printf("정수 하나를 입력하시오 :  ");
-    scanf("%d", &num);
-    
-    if (num>0)
-    printf("양수\n");
-    if (num=0)
-    printf("0\n"); 
-    if (num<0)
-    printf("음수\n");
-    
-    printf("\n ------------------- \n");
-    
+{
+  int num;
+  int num0;
+  
+  printf("Input an integer: ");
+  scanf("%d", &num);
+  
+  num0 = num*-1;
+  
+  if (num>=0)
+  printf("absoulut value will be: %i\n", num);
+  else
+  printf("absoulut value will be: %i\n", num0);
   
   system("PAUSE");	
   return 0;
