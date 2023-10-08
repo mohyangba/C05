@@ -17,7 +17,6 @@ int main(int argc, char *argv[])
     
     printf("The amount of number you used : %i\n", num);
   
-  
   system("PAUSE");	
   return 0;
 }
