@@ -3,18 +3,20 @@
 
 int main(int argc, char *argv[])
 {
-  int num;
-  int num0;
+    char c;
+    int num = 0;
+    
+    
+    printf("INPUT A STRING CODE: ");
+    while ( (c = getchar() ) != '\n')  
+    {
+          //printf("while\n");
+          if (c >= '0' && c <= '9')
+          num = num + 1;
+    }
+    
+    printf("The amount of number you used : %i\n", num);
   
-  printf("Input an integer: ");
-  scanf("%d", &num);
-  
-  num0 = num*-1;
-  
-  if (num>=0)
-  printf("absoulut value will be: %i\n", num);
-  else
-  printf("absoulut value will be: %i\n", num0);
   
   system("PAUSE");	
   return 0;
