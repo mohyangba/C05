@@ -3,20 +3,20 @@
 
 int main(int argc, char *argv[])
 {
-    char c;
-    int num = 0;
-    
-    
-    printf("INPUT A STRING CODE: ");
-    while ( (c = getchar() ) != '\n')  
-    {
-          //printf("while\n");
-          if (c >= '0' && c <= '9')
-          num = num + 1;
-    }
-    
-    printf("The amount of number you used : %i\n", num);
+  int sum = 0;
+  int num;
+  int i;
   
+  printf("enter a number: ");
+  scanf("%d", &num);
+  
+  for (i=0; i<=num; i++)
+  {
+      sum = sum + i;
+  }
+      
+  printf("the resault is %i\n", sum);
+      
   system("PAUSE");	
   return 0;
 }
